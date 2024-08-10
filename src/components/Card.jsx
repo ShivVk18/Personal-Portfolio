@@ -27,13 +27,13 @@ function Card(props) {
       </div>
       
       <img
-        src="https://static.tildacdn.com/tild6633-3833-4733-a136-323664656232/Screenshot_2021-01-1.png"
+        src={review.img_url}
         alt="Project"
         className="z-0 h-full w-full rounded-md object-cover group-hover:opacity-50 transition-all duration-300 overflow-hidden"
       />
       <div className="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent overflow-hidden"></div>
       <div className="absolute bottom-4 left-4 text-left w-[calc(100%-2rem)]">
-        <h1 className="text-base sm:text-lg font-semibold text-white truncate">{review.name}</h1>
+        <h1 className="text-base sm:text-lg font-semibold text-white truncate group-hover:opacity-0 duration-200 transition-all">{review.description}</h1>
         <ul className="flex flex-wrap gap-2 mt-2 opacity-0 group-hover:opacity-100 transition-all duration-300 text-xs sm:text-sm md:text-base">
           {review.techStack.map((element, index) => (
             <li key={index} className="text-white bg-gray-800 bg-opacity-50 px-2 py-1 rounded-full truncate">

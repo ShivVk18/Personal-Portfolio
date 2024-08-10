@@ -7,6 +7,7 @@ import MongoDb from "../images/MongoDB.png"
 import NodeJs from "../images/NodeJS.png"
 import ExpressJs from "../images/ExpressJs.png"
 import Sql from "../images/SQL.png"
+import Shoppic from "../assets/images/Shop Image.jpeg"
 
 export{
     Html,
@@ -17,5 +18,6 @@ export{
     NodeJs,
     ExpressJs,
     MongoDb,
-    Sql
+    Sql,
+    Shoppic
 }

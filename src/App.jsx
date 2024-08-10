@@ -12,7 +12,7 @@ import Home from './components/Home'
 
 function App() {
   const [themeMode, setThemeMode] = useState(() => {
-    // Check if a theme is stored in localStorage
+    
     return localStorage.getItem('theme') || 'light'
   })
   
