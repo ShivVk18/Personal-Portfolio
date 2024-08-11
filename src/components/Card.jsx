@@ -15,7 +15,7 @@ function Card(props) {
         >
           <FaGithub className="w-4 h-4 sm:w-5 sm:h-5" />
         </button>
-        
+
         <button
           onClick={() => window.open(`${review.Linkurl}`, "_blank")}
           type="button"
@@ -25,7 +25,7 @@ function Card(props) {
           <FaLink className="w-4 h-4 sm:w-5 sm:h-5" />
         </button>
       </div>
-      
+
       <img
         src={review.img_url}
         alt="Project"
@@ -33,10 +33,15 @@ function Card(props) {
       />
       <div className="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent overflow-hidden"></div>
       <div className="absolute bottom-4 left-4 text-left w-[calc(100%-2rem)]">
-        <h1 className="text-base sm:text-lg font-semibold text-white truncate group-hover:opacity-0 duration-200 transition-all">{review.description}</h1>
+        <p className="text-base sm:text-lg font-semibold text-white truncate group-hover:opacity-0 duration-200 transition-all">
+          {review.description}
+        </p>
         <ul className="flex flex-wrap gap-2 mt-2 opacity-0 group-hover:opacity-100 transition-all duration-300 text-xs sm:text-sm md:text-base">
           {review.techStack.map((element, index) => (
-            <li key={index} className="text-white bg-gray-800 bg-opacity-50 px-2 py-1 rounded-full truncate">
+            <li
+              key={index}
+              className="text-white bg-gray-800 bg-opacity-50 px-2 py-1 rounded-full truncate"
+            >
               {element}
             </li>
           ))}

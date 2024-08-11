@@ -1,19 +1,19 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import { IoMdMenu } from "react-icons/io";
 import { RxCross2 } from "react-icons/rx";
-import { Link } from 'react-scroll';
-import useTheme from '../contexts/Theme';
+import { Link } from "react-scroll";
+import useTheme from "../contexts/Theme";
 import { MdDarkMode } from "react-icons/md";
 import { MdLightMode } from "react-icons/md";
 
 function Navbar() {
   const [menu, setMenu] = useState(false);
   const navItems = [
-    {id: 1, title: "Home"},
+    { id: 1, title: "Home" },
     { id: 2, title: "About" },
     { id: 3, title: "Skills" },
     { id: 4, title: "Projects" },
-    { id: 5, title: "Contact" }
+    { id: 5, title: "Contact" },
   ];
 
   const handleLinkClick = () => {
@@ -21,7 +21,7 @@ function Navbar() {
   };
 
   const { themeMode, darkMode, lightMode } = useTheme();
-  
+
   function lightModehandler(event) {
     darkMode();
   }
@@ -32,9 +32,13 @@ function Navbar() {
   const ThemeToggle = () => (
     <div className="flex space-x-2">
       {themeMode === "light" ? (
-        <button onClick={lightModehandler}><MdLightMode size={25}/></button>
+        <button onClick={lightModehandler}>
+          <MdLightMode size={25} />
+        </button>
       ) : (
-        <button onClick={darkModeHandler}><MdDarkMode size={25}/></button>
+        <button onClick={darkModeHandler}>
+          <MdDarkMode size={25} />
+        </button>
       )}
     </div>
   );
@@ -72,13 +76,20 @@ function Navbar() {
           </div>
         </div>
       </div>
-      
+
       {/* Mobile menu */}
       {menu && (
-        <div className={`fixed inset-0 bg-white ${themeMode === "dark" ? "dark:bg-darkTheme" : ""} z-50 transition-colors duration-300`}>
+        <div
+          className={`fixed inset-0 bg-white ${
+            themeMode === "dark" ? "dark:bg-darkTheme" : ""
+          } z-50 transition-colors duration-300`}
+        >
           <div className="flex justify-between items-center p-4">
             <ThemeToggle />
-            <button onClick={() => setMenu(false)} className="text-black dark:text-white">
+            <button
+              onClick={() => setMenu(false)}
+              className="text-black dark:text-white"
+            >
               <RxCross2 size={24} />
             </button>
           </div>

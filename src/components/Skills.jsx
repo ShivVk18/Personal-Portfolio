@@ -8,7 +8,6 @@ import {
   NodeJs,
   ExpressJs,
   MongoDb,
-  Sql
 } from "../components/index";
 
 const FrontEnd = [
@@ -23,19 +22,19 @@ const BackEnd = [
   { id: 1, imgSrc: NodeJs },
   { id: 2, imgSrc: ExpressJs },
   { id: 3, imgSrc: MongoDb },
-  { id: 4, imgSrc: Sql}
+  
 ];
 
 const Skills = () => {
   return (
-    <div className="flex justify-center items-center flex-col w-full min-h-screen mt-10 pt-10 md:pt-20 px-4 sm:px-6 lg:px-8"  name="Skills">
+    <div
+      className="flex justify-center items-center flex-col w-full min-h-screen mt-10 pt-10 md:pt-20 px-4 sm:px-6 lg:px-8"
+      name="Skills"
+    >
       <div>
         <h1 className="text-center text-3xl sm:text-4xl font-bold">Skills</h1>
       </div>
-      <div
-       
-        className="w-full max-w-4xl flex justify-center items-center gap-3 flex-col mt-10 p-4 sm:p-6 animate-soft-golden-glow dark:animate-glow"
-      >
+      <div className="w-full max-w-4xl flex justify-center items-center gap-3 flex-col mt-10 p-4 sm:p-6 animate-soft-golden-glow dark:animate-glow">
         <div className="flex flex-col justify-center items-center gap-4 mb-6 w-full">
           <div className="text-xl sm:text-2xl font-bold">
             <h2>Front End</h2>
@@ -86,4 +85,3 @@ const Skills = () => {
 };
 
 export default Skills;
-
