@@ -23,7 +23,7 @@ function Home() {
       </div>
 
       <div>
-        <a href="https://drive.google.com/file/d/1zwnDfB5IxPpxHlYTwwDdWcZyGJ4xr9iN/view?usp=sharing">
+        <a href="https://drive.google.com/file/d/1qo6cRrUAgderLdsD607viatn9ukopmtP/view?usp=sharing">
         <button className="text-white bg-gradient-to-br from-green-400 to-blue-600 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800 font-medium rounded-lg text-sm px-6 py-2 text-center me-2 mb-2 relative hover:scale-110 transition-all duration-200">
           Resume
           <span className="absolute top-[0.80rem] right-1 text-white">
