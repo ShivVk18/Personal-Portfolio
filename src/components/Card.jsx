@@ -33,9 +33,7 @@ function Card(props) {
       />
       <div className="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent overflow-hidden"></div>
       <div className="absolute bottom-4 left-4 text-left w-[calc(100%-2rem)]">
-        <p className="text-base sm:text-lg font-semibold text-white truncate group-hover:opacity-0 duration-200 transition-all">
-          {review.description}
-        </p>
+        
         <ul className="flex flex-wrap gap-2 mt-2 opacity-0 group-hover:opacity-100 transition-all duration-300 text-xs sm:text-sm md:text-base">
           {review.techStack.map((element, index) => (
             <li

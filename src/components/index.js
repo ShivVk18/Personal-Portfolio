@@ -9,6 +9,7 @@ import ExpressJs from "../images/ExpressJs.png";
 import Sql from "../images/SQL.png";
 import Shoppic from "../assets/images/Shop Image.jpeg";
 import TopCourses from "../assets/images/TopCourse.jpeg"
+import FinanceTracker from '../assets/images/FINANCE TRACKER.jpg'
 
 export {
   Html,
@@ -21,5 +22,6 @@ export {
   MongoDb,
   Sql,
   Shoppic,
-  TopCourses
+  TopCourses,
+  FinanceTracker
 };
